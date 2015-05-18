@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ### SecureCookies
 
-To mark any cookie you set over HTTPS as _secure_, just add
+To mark any cookie you set over HTTPS as *secure*, just add
 `Rack::TlsTools::SecureCookies` to your middleware stack. For Rails that means
 adding
 
@@ -95,13 +95,13 @@ config.middleware.use Rack::TlsTools::Hpkp, {
 }
 ```
 
-The top level `max\_age` and `subdomains` values serve as defaults which can be
+The top level `max_age` and `subdomains` values serve as defaults which can be
 overridden in each of the `hosts` hashes. If omitted these default to the
-values shown above. `report\_uri` is optional, if set, browsers should `POST`
+values shown above. `report_uri` is optional, if set, browsers should `POST`
 some useful information there once they detect a certificate mismatch according
 to the [RFC](https://tools.ietf.org/html/rfc7469).
 
-*Always* add at least two hashes for each domain - one for the current key, and
+**Always** add at least two hashes for each domain - one for the current key, and
 one for a backup key you will be using in case the current one is lost,
 compromised or simply expires.
 
