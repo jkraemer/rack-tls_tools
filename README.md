@@ -68,6 +68,7 @@ with forged certificates in the future.
 
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning)
 - [RFC7469](https://tools.ietf.org/html/rfc7469)
+- [Everything you Need to Know about HTTP Public Key Pinning ](http://blog.rlove.org/2015/01/public-key-pinning-hpkp.html)
 
 In order to add HPKP headers to your site you have to specify a set of
 configurations, each consisting of a number of host names (which are all
