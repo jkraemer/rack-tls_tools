@@ -28,7 +28,7 @@ module Rack
       private
 
       def add_hsts_header!(headers)
-        val = "max-age=#{@options[:max_age]}"
+        val = "max-age=#{@options[:max_age].to_i}"
         val += "; includeSubDomains" if @options[:subdomains]
         headers['Strict-Transport-Security'] = val
       end
