@@ -14,7 +14,7 @@ class Minitest::Test
   def mock_app(middleware, options = {})
     main_app = lambda { |env|
       headers = {'Content-Type' => "text/html"}
-      headers['Set-Cookie'] = "foo=bar; path=/; secure; HttpOnly\nx=y; path=/\na=b;secure"
+      headers['Set-Cookie'] = "foo=bar; path=/; secure; HttpOnly\nx=y; path=/\na=b; secure"
       [200, headers, ['Hello world!']]
     }
     builder = Rack::Builder.new
